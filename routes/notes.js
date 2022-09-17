@@ -18,11 +18,11 @@ notes.get('/', (req, res) => {
             res.json(JSON.parse(data));
 
          }
-        })              
-  });
+    })              
+});
 
 
-  notes.post('/', (req, res) => {    
+notes.post('/', (req, res) => {    
    //Log post request received
    console.info(`${req.method} request to store data received`);
 
@@ -54,31 +54,43 @@ notes.get('/', (req, res) => {
                    fs.writeFile('./db/db.json', JSON.stringify(parsedNotes, null, 4), (writeErr) =>
                        writeErr
                            ?console.error(writeErr)
-                           :console.info('Successfully update notes db!')
+                           :console.info('Successfully updated notes db!')
                    );
 
            }
        });
 
-      const response = {
-         status: 'success',
-         body: newReview,
-       };
-         
-      console.log(response);
-      res.status(201).json(response);
+       res.status(201).json(newNote);
    } else {
        //respond with error message
-       res.status(500).json('Error in posting review');
+       res.json('Error in posting review');
    }
 });
 
 notes.delete('/:id', (req, res) => {    
    //Log post request received
-   console.info(`${req.method} request to delete note entry ${req.params.id}`);    
-   console.log(`the note to delete has id: ${ req.params.id}`);
-   const newArr = parsedNotes.filter( note => note.id !== req.params.id);
-   console.log(newArr);  
+   console.info(`${req.method} request received to delete note entry with id:${req.params.id}`);  
+
+
+   fs.readFile('./db/db.json', 'utf8',  (err, data) =>{
+      if(err) {
+          console.info(err)
+      } else {
+          //convert string to json object
+          const parsedNotes = JSON.parse(data);
+          //for testing
+          console.log(parsedNotes);
+
+          /*use the filter arrays calllback funtion to return an array of objects whose
+         id property is not equal to the id of the note the user wants to delete*/
+         const newArr = parsedNotes.filter( note => note.id !== req.params.id);
+         console.log(newArr);  
+         //write updated notes object to the db file
+         fs.writeFile('./db/db.json', JSON.stringify(newArr, null, 4), (writeErr) =>
+            writeErr ? console.error(writeErr) : res.status(201).json(newArr) );
+           
+      }
+  });   
    
 });
 

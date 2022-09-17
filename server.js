@@ -8,7 +8,7 @@ const fs = require('fs');
 
 
 //create instanace of express app
-const PORT = 3000;
+const PORT = 3001;
 const app = express();
 
 // Middleware for parsing JSON and urlencoded form data
