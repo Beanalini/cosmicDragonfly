@@ -73,6 +73,12 @@ notes.get('/', (req, res) => {
    }
 });
 
-
+notes.delete('/:id', (req, res) => {    
+   //Log post request received
+   console.info(`${req.method} request to delete note entry ${req.params.id}`);    
+   const id = req.params.id;
+   console.log(`the note to delete has id: ${id}`);
+   
+});
 
   module.exports = notes;
