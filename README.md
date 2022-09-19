@@ -117,7 +117,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
   The front-end code used in this project was provided  by Trilogy 2U as part of a project completed for the full-stack web development Bootcamp course, and can be cloned from the following Repository:
 
-  - Note Taker starter Code
+  - <a href="https://github.com/coding-boot-camp/miniature-eureka"> Link to the Note Taker starter Code repo</a> 
  
   ## Questions
   If you have any questions regarding this project or contents of this repository, please contact me via:
