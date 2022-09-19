@@ -4,6 +4,8 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Walk Through video](Walk-through-video)
+  * [Screen Shots](#screen-shots)
   * [Tests](#tests)
   * [Technologies Used](#technologies-used)
   * [Credits](#credits)
@@ -70,6 +72,12 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   - To clear the note from the right-hand column, click on the 'plus' icon in the top right-hand corner.
   - To delete a note click on the 'bin' icon next to the note title in the left-hand column. 
 
+  ## Walk Through Video
+
+   A  walk-through video demonstrating the functionality of the Note Taker Application is shown below:
+
+   ![Note Taker usage](./assets/images/note_taker.gif)
+
   ## Screen Shots
 
   The following screen shot shows the Note Taker application landing page.
@@ -85,7 +93,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   
   ## Deployed Application
 
-  - <a href="https://agile-cliffs-83869.herokuapp.com/" target="_blank"> Link to the Note Taker website</a>
+  - <a href="https://agile-cliffs-83869.herokuapp.com/"> Link to the Note Taker website</a>
 
   - <a href="https://github.com/Beanalini/cosmicDragonfly"> Link to the Note Taker repository</a>
 
