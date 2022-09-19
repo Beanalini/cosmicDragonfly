@@ -6,7 +6,7 @@
   * [Usage](#usage)
   * [Tests](#tests)
   * [Technologies Used](#technologies-used)
-  * [credits](#credits)
+  * [Credits](#credits)
   * [Questions](#questions)
   * [How to Contribute](#How-to-Contribute)   
   * [License](#license)
@@ -57,10 +57,10 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
   ## Usage
 
-  On Opening the Note Taker app you will be presented with a landing page, to use the app follow the instructions below:
+  On Opening the <a href="https://agile-cliffs-83869.herokuapp.com/" target="_blank"> Note Taker Website</a> you will be presented with a landing page. To use the app, follow the instructions below:
 
   - click on the 'Get Started' button to navigate to the notes page.
-  - When the page opens, the title of any previously saved notes will appear on the left-hand-side coloumn.
+  - When the page opens the title of any previously saved notes will appear on the left-hand coloumn.
   - To enter a note, :
     - Click on the 'Note Title' in the right-hand column and enter the title of your note.
     - Click on the 'Note Text' in the right-hand column and enter the text you wish to add.
@@ -70,11 +70,24 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   - To clear the note from the right-hand column, click on the 'plus' icon in the top right-hand corner.
   - To delete a note click on the 'bin' icon next to the note title in the left-hand column. 
 
+  ## Screen Shots
+
+  The following screen shot shows the Note Taker application landing page.
+
+  ![Note Taker Landing page](./assets/images/landing_page.png)
+
+
+  The following screen below displays the note taker page where a user can add and view sa ved notes.
+
+  ![Note Taker page](./assets/images/note_page.png)
+  
+
   
   ## Deployed Application
 
-  <a href="https://agile-cliffs-83869.herokuapp.com/"> Link to the Note Taker website</a>
-  <a href="https://github.com/Beanalini/cosmicDragonfly"> Link to the Note Taker repository</a>
+  - <a href="https://agile-cliffs-83869.herokuapp.com/" target="_blank"> Link to the Note Taker website</a>
+
+  - <a href="https://github.com/Beanalini/cosmicDragonfly"> Link to the Note Taker repository</a>
 
 
 
